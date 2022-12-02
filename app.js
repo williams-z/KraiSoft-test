@@ -33,10 +33,10 @@ window.onload = () => {
           draggable.style.left = `${e.clientX}px`
           draggable.style.top = `${e.clientY}px`
       } else {
-        if (e.clientX + dragBox.width >= parentBox.right) {
+        if (dragBox.left + dragBox.width >= parentBox.right) {
           draggable.style.left = `${parentBox.right - dragBox.width}px`
         }
-        if (e.clientY + dragBox.height >= parentBox.bottom) {
+        if (dragBox.top + dragBox.height >= parentBox.bottom) {
           draggable.style.top = `${parentBox.bottom - dragBox.height}px`
         }
       }  
